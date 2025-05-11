@@ -31,7 +31,7 @@ A full-stack rental listing platform inspired by Airbnb, built using **Node.js**
 ## 🚀 Getting Started Locally
 
 # Clone the repo
-git clone https://github.com/uttakarsh-barnwal/WanderLust.git
+git clone https://github.com/Ankita-624/WanderLust.git
 
 # Navigate into project directory
 cd WanderLust
