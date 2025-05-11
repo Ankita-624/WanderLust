@@ -40,13 +40,13 @@ cd WanderLust
 npm install
 
 # Set up environment variables (.env)
-CLOUDINARY_KEY=your_key
-MAPBOX_TOKEN=your_token
-DB_URL=your_mongodb_url
-SECRET=your_secret_key
+- CLOUDINARY_KEY=your_key
+- MAPBOX_TOKEN=your_token
+- DB_URL=your_mongodb_url
+- SECRET=your_secret_key
 
 # Start the server
 node app.js
 
 📄 License
-This project is licensed under the MIT License
+- This project is licensed under the MIT License
