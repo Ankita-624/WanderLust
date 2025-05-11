@@ -1,69 +1,52 @@
-# WanderLust
-WanderLust is the project I made while learning web-d from apna college.
+# 🌍 WanderLust - Stay Anywhere, Live Everywhere
 
-Wanderlust Web Project Installation Guide
+A full-stack rental listing platform inspired by Airbnb, built using **Node.js**, **Express**, **MongoDB**, and **EJS**. WanderLust allows users to explore, create, and manage rental listings with full authentication and cloud image uploads.
 
-This guide will walk you through the installation process for the Wanderlust web project. Follow the steps below to set up the project locally on your machine.
+### 🔗 Live Demo
+👉 [wanderlust-7vmg.onrender.com/listings](https://wanderlust-7vmg.onrender.com/listings)
 
---Prerequisites--
+---
 
-Before you begin, make sure you have the following installed on your system:
+## 🚀 Features
 
-    Node.js (version 18 recommended, optimally v18.19.1)
-    MongoDB
-    Nodemon (installed globally)
+- 🏡 Create, Read, Update, Delete (CRUD) listings
+- 🔐 User authentication (Register/Login)
+- ☁️ Image upload via Cloudinary
+- 📍 Interactive map integration
+- 📦 RESTful routing and MVC structure
+- 🧹 Input validation and error handling
 
---Installation Steps--
+---
 
-1. Clone the Wanderlust repository from GitHub:
+## 🛠 Tech Stack
 
-        git clone https://github.com/uttakarsh-baranwal/WanderLust.git
+- **Frontend**: HTML, CSS, Bootstrap, EJS
+- **Backend**: Node.js, Express
+- **Database**: MongoDB Atlas
+- **Image Storage**: Cloudinary
+- **Other Tools**: Mapbox, Mongoose, Passport.js
 
-2. Set up the database:
 
-        Create a .env file in the root directory of the project.
-    
-        Add the following line to the .env file:
-    
-        ATLASDB_URL=mongodb://127.0.0.1:27017/wanderlust
 
-3. Set up Cloudinary:
+## 🚀 Getting Started Locally
 
-        Go to Cloudinary and sign up for a free account.
-    
-        Once logged in, obtain your Cloudinary CLOUD_NAME, CLOUD_API_KEY, and CLOUD_API_SECRET.
-    
-        Add these values to the .env file:
-    
-        CLOUD_NAME=your_cloud_name
-        CLOUD_API_KEY=your_api_key
-        CLOUD_API_SECRET=your_api_secret
+# Clone the repo
+git clone https://github.com/uttakarsh-barnwal/WanderLust.git
 
-4. Set the secret for your Cloudinary storage:
+# Navigate into project directory
+cd WanderLust
 
-        Add a SECRET key to your .env file and set it to a secure value:
-    
-        SECRET=your_cloudinary_secret
+# Install server dependencies
+npm install
 
-5. Install project dependencies using npm:
+# Set up environment variables (.env)
+CLOUDINARY_KEY=your_key
+MAPBOX_TOKEN=your_token
+DB_URL=your_mongodb_url
+SECRET=your_secret_key
 
-        npm install
+# Start the server
+node app.js
 
-6. Run the application using Nodemon:
-
-        nodemon app.js
-
-7. Note :- Before running nodemon app.js make sure that mongodb is active on your local computer
-     If using linux, open terminal and enter command
-
-        sudo systemctl start mongod
-        (then enter your pc password when asked)
-   
-        After that enter:
-        mongosh
-
-9. Access the project:
-    
-        Once the server is running, you can access the project at http://localhost:8080/listings.
-
-That's it! You have successfully installed and set up the Wanderlust web project on your local machine. If you encounter any issues during the installation process, feel free to reach out for assistance. Happy traveling! 🌍✈️
+📄 License
+This project is licensed under the MIT License
